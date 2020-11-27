@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 300px">
+
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar" style="width: 50%" leght="60%">
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-1.jpg"> ice cream </option>
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-2.jpg"> durian </option>
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-3.jpg"> Red velvet cake </option>
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-4.jpg"> Apel </option>
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-5.jpg"> stoberi </option>
+			<option value="C:/xampp/DB/htdocs/tugas4/img/foto-6.jpg"> jeruk </option>
+		</select>
+	</center>
+		<br/>
+	<img src="C:/xampp/DB/htdocs/tugas4/img/foto-1.jpg" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Gambar " + gambar);
+	}
+</script>
+</html>
